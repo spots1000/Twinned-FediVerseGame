@@ -660,6 +660,10 @@
             <Description xml:space="preserve">Solara Kitchen</Description>
             <Number>2</Number>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Description xml:space="preserve">Title Screen</Description>
+            <Number>301</Number>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -738,268 +742,6 @@
                 <Width>320</Width>
                 <ZOrder>2</ZOrder>
               </GUILabel>
-            </Controls>
-          </GUIMain>
-          <GUIMain>
-            <NormalGUI>
-              <BackgroundColor>32089</BackgroundColor>
-              <BackgroundImage>0</BackgroundImage>
-              <BorderColor>32089</BorderColor>
-              <Clickable>True</Clickable>
-              <Height>29</Height>
-              <ID>1</ID>
-              <Left>0</Left>
-              <Name>gIconbar</Name>
-              <OnClick />
-              <PopupStyle>MouseYPos</PopupStyle>
-              <PopupYPos>13</PopupYPos>
-              <Top>0</Top>
-              <Transparency>0</Transparency>
-              <Visible>True</Visible>
-              <Width>320</Width>
-              <ZOrder>1</ZOrder>
-            </NormalGUI>
-            <Controls>
-              <GUIButton>
-                <ClickAction>SetCursorMode</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>27</Height>
-                <ID>0</ID>
-                <Image>2100</Image>
-                <Left>1</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>2101</MouseoverImage>
-                <Name>btnIconWalk</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick />
-                <PushedImage>2102</PushedImage>
-                <Text />
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>16</TextColor>
-                <Top>1</Top>
-                <Visible>True</Visible>
-                <Width>32</Width>
-                <ZOrder>0</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>SetCursorMode</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>27</Height>
-                <ID>1</ID>
-                <Image>2104</Image>
-                <Left>33</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>2105</MouseoverImage>
-                <Name>btnIconExamine</Name>
-                <NewModeNumber>1</NewModeNumber>
-                <OnClick />
-                <PushedImage>2106</PushedImage>
-                <Text />
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>16</TextColor>
-                <Top>1</Top>
-                <Visible>True</Visible>
-                <Width>32</Width>
-                <ZOrder>1</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>SetCursorMode</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>27</Height>
-                <ID>2</ID>
-                <Image>2108</Image>
-                <Left>65</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>2109</MouseoverImage>
-                <Name>btnIconInteract</Name>
-                <NewModeNumber>2</NewModeNumber>
-                <OnClick />
-                <PushedImage>2110</PushedImage>
-                <Text />
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>16</TextColor>
-                <Top>1</Top>
-                <Visible>True</Visible>
-                <Width>32</Width>
-                <ZOrder>2</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>SetCursorMode</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>27</Height>
-                <ID>3</ID>
-                <Image>2112</Image>
-                <Left>97</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>2113</MouseoverImage>
-                <Name>btnIconTalk</Name>
-                <NewModeNumber>3</NewModeNumber>
-                <OnClick />
-                <PushedImage>2114</PushedImage>
-                <Text />
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>16</TextColor>
-                <Top>1</Top>
-                <Visible>True</Visible>
-                <Width>32</Width>
-                <ZOrder>3</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>RunScript</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>27</Height>
-                <ID>4</ID>
-                <Image>2120</Image>
-                <Left>129</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>2121</MouseoverImage>
-                <Name>btnIconInv</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick>btnIconInv_Click</OnClick>
-                <PushedImage>2122</PushedImage>
-                <Text />
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>16</TextColor>
-                <Top>1</Top>
-                <Visible>True</Visible>
-                <Width>32</Width>
-                <ZOrder>4</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>RunScript</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>27</Height>
-                <ID>5</ID>
-                <Image>2124</Image>
-                <Left>161</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>2124</MouseoverImage>
-                <Name>btnIconCurInv</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick>btnIconCurInv_Click</OnClick>
-                <PushedImage>2126</PushedImage>
-                <Text>(INVSHR)</Text>
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>16</TextColor>
-                <Top>1</Top>
-                <Visible>True</Visible>
-                <Width>32</Width>
-                <ZOrder>5</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>RunScript</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>27</Height>
-                <ID>6</ID>
-                <Image>2128</Image>
-                <Left>193</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>2129</MouseoverImage>
-                <Name>btnIconSave</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick>btnIconSave_Click</OnClick>
-                <PushedImage>2130</PushedImage>
-                <Text />
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>16</TextColor>
-                <Top>1</Top>
-                <Visible>True</Visible>
-                <Width>32</Width>
-                <ZOrder>6</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>RunScript</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>27</Height>
-                <ID>7</ID>
-                <Image>2132</Image>
-                <Left>225</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>2133</MouseoverImage>
-                <Name>btnIconLoad</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick>btnIconLoad_Click</OnClick>
-                <PushedImage>2134</PushedImage>
-                <Text />
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>16</TextColor>
-                <Top>1</Top>
-                <Visible>True</Visible>
-                <Width>32</Width>
-                <ZOrder>7</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>RunScript</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>27</Height>
-                <ID>8</ID>
-                <Image>2140</Image>
-                <Left>289</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>2141</MouseoverImage>
-                <Name>btnIconExit</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick>btnIconExit_Click</OnClick>
-                <PushedImage>2142</PushedImage>
-                <Text />
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>16</TextColor>
-                <Top>1</Top>
-                <Visible>True</Visible>
-                <Width>32</Width>
-                <ZOrder>8</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>RunScript</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>27</Height>
-                <ID>9</ID>
-                <Image>2136</Image>
-                <Left>257</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>2137</MouseoverImage>
-                <Name>btnIconAbout</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick>btnIconAbout_Click</OnClick>
-                <PushedImage>2138</PushedImage>
-                <Text />
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>16</TextColor>
-                <Top>1</Top>
-                <Visible>True</Visible>
-                <Width>32</Width>
-                <ZOrder>9</ZOrder>
-              </GUIButton>
             </Controls>
           </GUIMain>
           <GUIMain>
@@ -1157,6 +899,268 @@
                 <Visible>True</Visible>
                 <Width>30</Width>
                 <ZOrder>5</ZOrder>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>32089</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <BorderColor>32089</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>29</Height>
+              <ID>1</ID>
+              <Left>0</Left>
+              <Name>gIconbar</Name>
+              <OnClick />
+              <PopupStyle>MouseYPos</PopupStyle>
+              <PopupYPos>13</PopupYPos>
+              <Top>0</Top>
+              <Transparency>0</Transparency>
+              <Visible>True</Visible>
+              <Width>320</Width>
+              <ZOrder>1</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <ClickAction>SetCursorMode</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>27</Height>
+                <ID>0</ID>
+                <Image>2104</Image>
+                <Left>1</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>2105</MouseoverImage>
+                <Name>btnIconExamine</Name>
+                <NewModeNumber>1</NewModeNumber>
+                <OnClick />
+                <PushedImage>2106</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>16</TextColor>
+                <Top>1</Top>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>0</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>SetCursorMode</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>27</Height>
+                <ID>1</ID>
+                <Image>2108</Image>
+                <Left>33</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>2109</MouseoverImage>
+                <Name>btnIconInteract</Name>
+                <NewModeNumber>2</NewModeNumber>
+                <OnClick />
+                <PushedImage>2110</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>16</TextColor>
+                <Top>1</Top>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>1</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>27</Height>
+                <ID>2</ID>
+                <Image>2124</Image>
+                <Left>97</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>2124</MouseoverImage>
+                <Name>btnIconCurInv</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>btnIconCurInv_Click</OnClick>
+                <PushedImage>2126</PushedImage>
+                <Text>(INVSHR)</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>16</TextColor>
+                <Top>1</Top>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>2</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>27</Height>
+                <ID>3</ID>
+                <Image>2128</Image>
+                <Left>129</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>2129</MouseoverImage>
+                <Name>btnIconSave</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>btnIconSave_Click</OnClick>
+                <PushedImage>2130</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>16</TextColor>
+                <Top>1</Top>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>3</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>27</Height>
+                <ID>4</ID>
+                <Image>2132</Image>
+                <Left>161</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>2133</MouseoverImage>
+                <Name>btnIconLoad</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>btnIconLoad_Click</OnClick>
+                <PushedImage>2134</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>16</TextColor>
+                <Top>1</Top>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>4</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>27</Height>
+                <ID>5</ID>
+                <Image>2140</Image>
+                <Left>289</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>2141</MouseoverImage>
+                <Name>btnIconExit</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>btnIconExit_Click</OnClick>
+                <PushedImage>2142</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>16</TextColor>
+                <Top>1</Top>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>5</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>27</Height>
+                <ID>6</ID>
+                <Image>2136</Image>
+                <Left>257</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>2137</MouseoverImage>
+                <Name>btnIconAbout</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>btnIconAbout_Click</OnClick>
+                <PushedImage>2138</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>16</TextColor>
+                <Top>1</Top>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>6</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>27</Height>
+                <ID>7</ID>
+                <Image>2120</Image>
+                <Left>65</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>2121</MouseoverImage>
+                <Name>Button1</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>btnIconInv_Click</OnClick>
+                <PushedImage>2122</PushedImage>
+                <Text>(INVSHR)</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>16</TextColor>
+                <Top>1</Top>
+                <Visible>True</Visible>
+                <Width>30</Width>
+                <ZOrder>7</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>27</Height>
+                <ID>8</ID>
+                <Image>2124</Image>
+                <Left>193</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>2124</MouseoverImage>
+                <Name>Button2</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>btnIconCurInv_Click</OnClick>
+                <PushedImage>2126</PushedImage>
+                <Text>(INVSHR)</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>16</TextColor>
+                <Top>1</Top>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>8</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>27</Height>
+                <ID>9</ID>
+                <Image>2124</Image>
+                <Left>225</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>2124</MouseoverImage>
+                <Name>Button3</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>btnIconCurInv_Click</OnClick>
+                <PushedImage>2126</PushedImage>
+                <Text>(INVSHR)</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>16</TextColor>
+                <Top>1</Top>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>9</ZOrder>
               </GUIButton>
             </Controls>
           </GUIMain>
@@ -2080,6 +2084,52 @@
               </GUILabel>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>5</BackgroundImage>
+              <BorderColor>65535</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>320</Height>
+              <ID>9</ID>
+              <Left>0</Left>
+              <Name>gFridgeGui</Name>
+              <OnClick>gGui1_OnClick</OnClick>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <Top>0</Top>
+              <Transparency>0</Transparency>
+              <Visible>False</Visible>
+              <Width>200</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>17</Height>
+                <ID>0</ID>
+                <Image>0</Image>
+                <Left>130</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>Back</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>Back_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text>Back</Text>
+                <TextAlignment>MiddleCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>296</Top>
+                <Visible>True</Visible>
+                <Width>62</Width>
+                <ZOrder>0</ZOrder>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -2088,14 +2138,14 @@
         <SubFolders />
         <InventoryItems>
           <InventoryItem>
-            <CursorImage>2041</CursorImage>
-            <Description xml:space="preserve">Blue Cup</Description>
-            <HotspotX>1</HotspotX>
-            <HotspotY>1</HotspotY>
+            <CursorImage>1</CursorImage>
+            <Description xml:space="preserve">Frying Pan</Description>
+            <HotspotX>38</HotspotX>
+            <HotspotY>10</HotspotY>
             <ID>1</ID>
-            <Image>2041</Image>
-            <Name>iBlueCup</Name>
-            <PlayerStartsWithItem>True</PlayerStartsWithItem>
+            <Image>1</Image>
+            <Name>iFryingPan</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <Properties />
             <Interactions>
               <Event Index="0" />
@@ -2106,14 +2156,50 @@
             </Interactions>
           </InventoryItem>
           <InventoryItem>
-            <CursorImage>2042</CursorImage>
-            <Description>Key</Description>
-            <HotspotX>1</HotspotX>
-            <HotspotY>1</HotspotY>
+            <CursorImage>2</CursorImage>
+            <Description>Eggs</Description>
+            <HotspotX>6</HotspotX>
+            <HotspotY>7</HotspotY>
             <ID>2</ID>
-            <Image>2042</Image>
-            <Name>iKey</Name>
-            <PlayerStartsWithItem>True</PlayerStartsWithItem>
+            <Image>2</Image>
+            <Name>iMultiEggs</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>3</CursorImage>
+            <Description xml:space="preserve">Cheese Block</Description>
+            <HotspotX>5</HotspotX>
+            <HotspotY>3</HotspotY>
+            <ID>3</ID>
+            <Image>3</Image>
+            <Name>iCheeseBlock</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>4</CursorImage>
+            <Description>Tomato</Description>
+            <HotspotX>4</HotspotX>
+            <HotspotY>6</HotspotY>
+            <ID>4</ID>
+            <Image>4</Image>
+            <Name>iTomato</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <Properties />
             <Interactions>
               <Event Index="0" />
@@ -2319,7 +2405,7 @@
             <SpeechView>0</SpeechView>
             <StartX>160</StartX>
             <StartY>160</StartY>
-            <StartingRoom>1</StartingRoom>
+            <StartingRoom>301</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -4444,6 +4530,96 @@
               <RemapToRoomPalette>False</RemapToRoomPalette>
               <ImportMethod>LeaveAsIs</ImportMethod>
               <ImportAlphaChannel>False</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="1" Width="55" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Frying_Pan.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>25</ImportHeight>
+              <ImportWidth>55</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="2" Width="13" Height="14" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Eggs.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>14</ImportHeight>
+              <ImportWidth>13</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="3" Width="10" Height="7" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Cheese.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>7</ImportHeight>
+              <ImportWidth>10</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="4" Width="9" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Tomato.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>11</ImportHeight>
+              <ImportWidth>9</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="5" Width="200" Height="320" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Inside_Fridge_Solara.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>320</ImportHeight>
+              <ImportWidth>200</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="6" Width="13" Height="14" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Eggs.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>14</ImportHeight>
+              <ImportWidth>13</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
             </Source>
           </Sprite>
         </Sprites>
