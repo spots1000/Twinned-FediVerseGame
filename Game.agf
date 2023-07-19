@@ -664,6 +664,22 @@
             <Description xml:space="preserve">Title Screen</Description>
             <Number>301</Number>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Description xml:space="preserve">Living Room</Description>
+            <Number>3</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description xml:space="preserve">Luna Bedroom</Description>
+            <Number>4</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description xml:space="preserve">Luna Kitchen</Description>
+            <Number>5</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description xml:space="preserve">Luna Living Room</Description>
+            <Number>6</Number>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2087,20 +2103,20 @@
           <GUIMain>
             <NormalGUI>
               <BackgroundColor>65535</BackgroundColor>
-              <BackgroundImage>5</BackgroundImage>
+              <BackgroundImage>10</BackgroundImage>
               <BorderColor>65535</BorderColor>
               <Clickable>True</Clickable>
-              <Height>320</Height>
+              <Height>160</Height>
               <ID>9</ID>
               <Left>0</Left>
-              <Name>gFridgeGui</Name>
-              <OnClick>gGui1_OnClick</OnClick>
+              <Name>gFridgeGUI</Name>
+              <OnClick />
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
               <Top>0</Top>
               <Transparency>0</Transparency>
               <Visible>False</Visible>
-              <Width>200</Width>
+              <Width>100</Width>
               <ZOrder>0</ZOrder>
             </NormalGUI>
             <Controls>
@@ -2110,10 +2126,82 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>17</Height>
+                <Height>28</Height>
                 <ID>0</ID>
+                <Image>11</Image>
+                <Left>34</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>bEggs</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>bEggs_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>23</Top>
+                <Visible>True</Visible>
+                <Width>26</Width>
+                <ZOrder>0</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>14</Height>
+                <ID>1</ID>
+                <Image>3</Image>
+                <Left>48</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>bCheese</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>bCheese_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>63</Top>
+                <Visible>True</Visible>
+                <Width>20</Width>
+                <ZOrder>1</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>22</Height>
+                <ID>2</ID>
+                <Image>4</Image>
+                <Left>20</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>bTomato</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>bTomato_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>78</Top>
+                <Visible>True</Visible>
+                <Width>18</Width>
+                <ZOrder>2</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>1</Font>
+                <Height>12</Height>
+                <ID>3</ID>
                 <Image>0</Image>
-                <Left>130</Left>
+                <Left>69</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>0</MouseoverImage>
                 <Name>Back</Name>
@@ -2121,12 +2209,12 @@
                 <OnClick>Back_OnClick</OnClick>
                 <PushedImage>0</PushedImage>
                 <Text>Back</Text>
-                <TextAlignment>MiddleCenter</TextAlignment>
+                <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>0</TextColor>
-                <Top>296</Top>
+                <Top>147</Top>
                 <Visible>True</Visible>
-                <Width>62</Width>
-                <ZOrder>0</ZOrder>
+                <Width>30</Width>
+                <ZOrder>3</ZOrder>
               </GUIButton>
             </Controls>
           </GUIMain>
@@ -2161,7 +2249,7 @@
             <HotspotX>6</HotspotX>
             <HotspotY>7</HotspotY>
             <ID>2</ID>
-            <Image>2</Image>
+            <Image>11</Image>
             <Name>iMultiEggs</Name>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <Properties />
@@ -2176,8 +2264,8 @@
           <InventoryItem>
             <CursorImage>3</CursorImage>
             <Description xml:space="preserve">Cheese Block</Description>
-            <HotspotX>5</HotspotX>
-            <HotspotY>3</HotspotY>
+            <HotspotX>10</HotspotX>
+            <HotspotY>5</HotspotY>
             <ID>3</ID>
             <Image>3</Image>
             <Name>iCheeseBlock</Name>
@@ -2194,11 +2282,47 @@
           <InventoryItem>
             <CursorImage>4</CursorImage>
             <Description>Tomato</Description>
-            <HotspotX>4</HotspotX>
-            <HotspotY>6</HotspotY>
+            <HotspotX>8</HotspotX>
+            <HotspotY>13</HotspotY>
             <ID>4</ID>
             <Image>4</Image>
             <Name>iTomato</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>7</CursorImage>
+            <Description xml:space="preserve">Lucky Socks</Description>
+            <HotspotX>25</HotspotX>
+            <HotspotY>35</HotspotY>
+            <ID>5</ID>
+            <Image>7</Image>
+            <Name>iLuckySocks</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>9</CursorImage>
+            <Description>Keys</Description>
+            <HotspotX>7</HotspotX>
+            <HotspotY>6</HotspotY>
+            <ID>6</ID>
+            <Image>8</Image>
+            <Name>iKeys</Name>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <Properties />
             <Interactions>
@@ -2447,7 +2571,7 @@
             <SpeechView>0</SpeechView>
             <StartX>160</StartX>
             <StartY>120</StartY>
-            <StartingRoom>-1</StartingRoom>
+            <StartingRoom>4</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -4562,13 +4686,13 @@
               <ImportAlphaChannel>True</ImportAlphaChannel>
             </Source>
           </Sprite>
-          <Sprite Slot="3" Width="10" Height="7" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+          <Sprite Slot="3" Width="20" Height="14" ColorDepth="32" Resolution="Real" AlphaChannel="True">
             <Source>
-              <FileName>Art Assets/Items/Cheese.png</FileName>
+              <FileName>Art Assets/Items/Cheese_Large.bmp</FileName>
               <OffsetX>0</OffsetX>
               <OffsetY>0</OffsetY>
-              <ImportHeight>7</ImportHeight>
-              <ImportWidth>10</ImportWidth>
+              <ImportHeight>14</ImportHeight>
+              <ImportWidth>20</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
@@ -4577,13 +4701,13 @@
               <ImportAlphaChannel>True</ImportAlphaChannel>
             </Source>
           </Sprite>
-          <Sprite Slot="4" Width="9" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+          <Sprite Slot="4" Width="18" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
             <Source>
-              <FileName>Art Assets/Items/Tomato.png</FileName>
+              <FileName>Art Assets/Items/Tomato_Large.bmp</FileName>
               <OffsetX>0</OffsetX>
               <OffsetY>0</OffsetY>
-              <ImportHeight>11</ImportHeight>
-              <ImportWidth>9</ImportWidth>
+              <ImportHeight>22</ImportHeight>
+              <ImportWidth>18</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
@@ -4614,6 +4738,81 @@
               <OffsetY>0</OffsetY>
               <ImportHeight>14</ImportHeight>
               <ImportWidth>13</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="7" Width="40" Height="71" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Socks_Solara.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>71</ImportHeight>
+              <ImportWidth>40</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="8" Width="60" Height="51" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Keys_Solara.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>51</ImportHeight>
+              <ImportWidth>60</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="9" Width="15" Height="13" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Keys_Solara_RealWorld.bmp</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>13</ImportHeight>
+              <ImportWidth>15</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="10" Width="100" Height="160" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Inside_Fridge_Solara.bmp</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>160</ImportHeight>
+              <ImportWidth>100</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="11" Width="26" Height="28" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Eggs_Large.bmp</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>28</ImportHeight>
+              <ImportWidth>26</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
