@@ -733,7 +733,7 @@
                 <Left>250</Left>
                 <Locked>True</Locked>
                 <Name>lblScore</Name>
-                <Text xml:space="preserve">Score: @SCORE@</Text>
+                <Text />
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>19248</TextColor>
                 <Top>1</Top>
@@ -2102,18 +2102,18 @@
           </GUIMain>
           <GUIMain>
             <NormalGUI>
-              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>10</BackgroundImage>
-              <BorderColor>65535</BorderColor>
+              <BorderColor>0</BorderColor>
               <Clickable>True</Clickable>
               <Height>160</Height>
               <ID>9</ID>
-              <Left>0</Left>
+              <Left>110</Left>
               <Name>gFridgeGUI</Name>
               <OnClick />
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
-              <Top>0</Top>
+              <Top>23</Top>
               <Transparency>0</Transparency>
               <Visible>False</Visible>
               <Width>100</Width>
@@ -2197,7 +2197,7 @@
                 <Clickable>True</Clickable>
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
-                <Font>1</Font>
+                <Font>3</Font>
                 <Height>12</Height>
                 <ID>3</ID>
                 <Image>0</Image>
@@ -2215,6 +2215,397 @@
                 <Visible>True</Visible>
                 <Width>30</Width>
                 <ZOrder>3</ZOrder>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>12</BackgroundImage>
+              <BorderColor>65535</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>100</Height>
+              <ID>10</ID>
+              <Left>80</Left>
+              <Name>gSolaraEmail</Name>
+              <OnClick>gSolaraEmail_OnClick</OnClick>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <Top>55</Top>
+              <Transparency>0</Transparency>
+              <Visible>False</Visible>
+              <Width>160</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUITextBox>
+                <Clickable>False</Clickable>
+                <Enabled>False</Enabled>
+                <Font>1</Font>
+                <Height>9</Height>
+                <ID>0</ID>
+                <Left>159</Left>
+                <Locked>False</Locked>
+                <Name>SolaraOldText</Name>
+                <OnActivate>SolaraEmailFromText_OnActivate</OnActivate>
+                <ShowBorder>False</ShowBorder>
+                <Text />
+                <TextColor>0</TextColor>
+                <Top>5</Top>
+                <Visible>True</Visible>
+                <Width>73</Width>
+                <ZOrder>0</ZOrder>
+              </GUITextBox>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>15</Height>
+                <ID>1</ID>
+                <Left>9</Left>
+                <Locked>False</Locked>
+                <Name>lSolaraEmailFrom</Name>
+                <Text xml:space="preserve">From:      CarlyB@dimexp.edu</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>7</Top>
+                <Visible>True</Visible>
+                <Width>144</Width>
+                <ZOrder>1</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>10</Height>
+                <ID>2</ID>
+                <Left>14</Left>
+                <Locked>False</Locked>
+                <Name>lSolaraEmailTo</Name>
+                <Text xml:space="preserve">To:         SolaraR@dimexp.edu</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>20</Top>
+                <Visible>True</Visible>
+                <Width>138</Width>
+                <ZOrder>2</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>11</Height>
+                <ID>3</ID>
+                <Left>12</Left>
+                <Locked>False</Locked>
+                <Name>lSolaraSubject</Name>
+                <Text xml:space="preserve">SBJ:       Ready To Go!</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>34</Top>
+                <Visible>True</Visible>
+                <Width>115</Width>
+                <ZOrder>3</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>10</Height>
+                <ID>4</ID>
+                <Left>7</Left>
+                <Locked>False</Locked>
+                <Name>lBodyUpper</Name>
+                <Text xml:space="preserve">Morning Solara,</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>48</Top>
+                <Visible>True</Visible>
+                <Width>147</Width>
+                <ZOrder>4</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>34</Height>
+                <ID>5</ID>
+                <Left>10</Left>
+                <Locked>False</Locked>
+                <Name>Label1</Name>
+                <Text xml:space="preserve">After you left we finished up all the final checks. The machine will be ready to go as soon as you come in tomorrow.</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>59</Top>
+                <Visible>True</Visible>
+                <Width>145</Width>
+                <ZOrder>5</ZOrder>
+              </GUILabel>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>10</Height>
+                <ID>6</ID>
+                <Image>0</Image>
+                <Left>148</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>bSolaraEmailExit</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>bSolaraEmailExit_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>3</Top>
+                <Visible>True</Visible>
+                <Width>10</Width>
+                <ZOrder>6</ZOrder>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>8</BackgroundColor>
+              <BackgroundImage>13</BackgroundImage>
+              <BorderColor>2</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>160</Height>
+              <ID>11</ID>
+              <Left>118</Left>
+              <Name>gLunaText</Name>
+              <OnClick />
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <Top>30</Top>
+              <Transparency>0</Transparency>
+              <Visible>False</Visible>
+              <Width>100</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>9</Height>
+                <ID>0</ID>
+                <Left>11</Left>
+                <Locked>False</Locked>
+                <Name>lWorkTitle1</Name>
+                <Text>Work</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>8</Top>
+                <Visible>True</Visible>
+                <Width>33</Width>
+                <ZOrder>0</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>10</Height>
+                <ID>1</ID>
+                <Left>68</Left>
+                <Locked>False</Locked>
+                <Name>lLunaTitle1</Name>
+                <Text>Luna</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>62</Top>
+                <Visible>True</Visible>
+                <Width>28</Width>
+                <ZOrder>1</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>8</Height>
+                <ID>2</ID>
+                <Left>11</Left>
+                <Locked>False</Locked>
+                <Name>lWorkTitle2</Name>
+                <Text>Work</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>116</Top>
+                <Visible>True</Visible>
+                <Width>25</Width>
+                <ZOrder>2</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>28</Height>
+                <ID>3</ID>
+                <Left>14</Left>
+                <Locked>False</Locked>
+                <Name>lWorkText1</Name>
+                <Text xml:space="preserve">We found someone to cover today.</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>18</Top>
+                <Visible>True</Visible>
+                <Width>85</Width>
+                <ZOrder>3</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>32</Height>
+                <ID>4</ID>
+                <Left>20</Left>
+                <Locked>False</Locked>
+                <Name>LLunaTextBox</Name>
+                <Text xml:space="preserve">Great, sorry for the inconvenience.</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>72</Top>
+                <Visible>True</Visible>
+                <Width>75</Width>
+                <ZOrder>4</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>24</Height>
+                <ID>5</ID>
+                <Left>10</Left>
+                <Locked>False</Locked>
+                <Name>Label2</Name>
+                <Text xml:space="preserve">Hope you feel good for your shift tomorrow</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>126</Top>
+                <Visible>True</Visible>
+                <Width>81</Width>
+                <ZOrder>5</ZOrder>
+              </GUILabel>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>9</Height>
+                <ID>6</ID>
+                <Image>0</Image>
+                <Left>90</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>bLunaExit</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>bLunaExit_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>1</Top>
+                <Visible>True</Visible>
+                <Width>10</Width>
+                <ZOrder>6</ZOrder>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>15</BackgroundImage>
+              <BorderColor>0</BorderColor>
+              <Clickable>True</Clickable>
+              <Height>160</Height>
+              <ID>12</ID>
+              <Left>120</Left>
+              <Name>gLunaFridgeGui</Name>
+              <OnClick />
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <Top>23</Top>
+              <Transparency>0</Transparency>
+              <Visible>False</Visible>
+              <Width>100</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>7</Height>
+                <ID>0</ID>
+                <Image>14</Image>
+                <Left>44</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>14</MouseoverImage>
+                <Name>bLunaEgg</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>bLunaEgg_OnClick</OnClick>
+                <PushedImage>14</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>41</Top>
+                <Visible>True</Visible>
+                <Width>6</Width>
+                <ZOrder>0</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>14</Height>
+                <ID>1</ID>
+                <Image>3</Image>
+                <Left>24</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>3</MouseoverImage>
+                <Name>bLunaCheese</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>bLunaCheese_OnClick</OnClick>
+                <PushedImage>3</PushedImage>
+                <Text />
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>61</Top>
+                <Visible>True</Visible>
+                <Width>20</Width>
+                <ZOrder>1</ZOrder>
+              </GUIButton>
+              <GUIButton>
+                <ClickAction>RunScript</ClickAction>
+                <Clickable>True</Clickable>
+                <ClipImage>False</ClipImage>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>12</Height>
+                <ID>2</ID>
+                <Image>0</Image>
+                <Left>63</Left>
+                <Locked>False</Locked>
+                <MouseoverImage>0</MouseoverImage>
+                <Name>LunaBack</Name>
+                <NewModeNumber>0</NewModeNumber>
+                <OnClick>LunaBack_OnClick</OnClick>
+                <PushedImage>0</PushedImage>
+                <Text>Back</Text>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>143</Top>
+                <Visible>True</Visible>
+                <Width>32</Width>
+                <ZOrder>2</ZOrder>
               </GUIButton>
             </Controls>
           </GUIMain>
@@ -2323,6 +2714,60 @@
             <ID>6</ID>
             <Image>8</Image>
             <Name>iKeys</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>14</CursorImage>
+            <Description>Egg</Description>
+            <HotspotX>2</HotspotX>
+            <HotspotY>2</HotspotY>
+            <ID>7</ID>
+            <Image>14</Image>
+            <Name>iSingleEgg</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>16</CursorImage>
+            <Description>Keys</Description>
+            <HotspotX>8</HotspotX>
+            <HotspotY>6</HotspotY>
+            <ID>8</ID>
+            <Image>17</Image>
+            <Name>iLunaKeys</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>18</CursorImage>
+            <Description xml:space="preserve">Favorite Socks</Description>
+            <HotspotX>25</HotspotX>
+            <HotspotY>31</HotspotY>
+            <ID>9</ID>
+            <Image>18</Image>
+            <Name>iLunaLuckySocks</Name>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <Properties />
             <Interactions>
@@ -2770,6 +3215,20 @@
         <PointSize>0</PointSize>
         <SizeMultiplier>1</SizeMultiplier>
         <SourceFilename />
+        <TTFMetricsFixup>None</TTFMetricsFixup>
+        <VerticalOffset>0</VerticalOffset>
+      </Font>
+      <Font>
+        <AutoOutlineStyle>Squared</AutoOutlineStyle>
+        <AutoOutlineThickness>1</AutoOutlineThickness>
+        <ID>3</ID>
+        <LineSpacing>0</LineSpacing>
+        <Name xml:space="preserve">Custom Font 1</Name>
+        <OutlineFont>0</OutlineFont>
+        <OutlineStyle>None</OutlineStyle>
+        <PointSize>8</PointSize>
+        <SizeMultiplier>1</SizeMultiplier>
+        <SourceFilename xml:space="preserve">Art Assets/Minecraftia-Regular.ttf</SourceFilename>
         <TTFMetricsFixup>None</TTFMetricsFixup>
         <VerticalOffset>0</VerticalOffset>
       </Font>
@@ -4813,6 +5272,111 @@
               <OffsetY>0</OffsetY>
               <ImportHeight>28</ImportHeight>
               <ImportWidth>26</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="12" Width="160" Height="100" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/GUI Elements/Solara_Email_Background_V2.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>100</ImportHeight>
+              <ImportWidth>160</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="13" Width="100" Height="160" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/GUI Elements/Luna_Text_Background_V3.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>160</ImportHeight>
+              <ImportWidth>100</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="14" Width="6" Height="7" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Single_Egg.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>7</ImportHeight>
+              <ImportWidth>6</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="15" Width="100" Height="160" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/GUI Elements/Inside_Fridge_Luna.bmp</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>160</ImportHeight>
+              <ImportWidth>100</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="16" Width="15" Height="13" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Keys_Luna.bmp</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>13</ImportHeight>
+              <ImportWidth>15</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="17" Width="60" Height="51" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Keys_Luna.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>51</ImportHeight>
+              <ImportWidth>60</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="18" Width="40" Height="71" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/Socks_Luna.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>71</ImportHeight>
+              <ImportWidth>40</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
