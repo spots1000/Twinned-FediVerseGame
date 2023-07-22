@@ -5,9 +5,9 @@
     <Settings>
       <AllowRelativeAssetResolutions>False</AllowRelativeAssetResolutions>
       <AlwaysDisplayTextAsSpeech>False</AlwaysDisplayTextAsSpeech>
-      <AndroidAppVersionCode>1</AndroidAppVersionCode>
-      <AndroidAppVersionName>1.0.0.0</AndroidAppVersionName>
-      <AndroidApplicationId>com.mystudio.mygame</AndroidApplicationId>
+      <AndroidAppVersionCode>2</AndroidAppVersionCode>
+      <AndroidAppVersionName>2.0.0.0</AndroidAppVersionName>
+      <AndroidApplicationId>com.borealis.twinned</AndroidApplicationId>
       <AndroidBuildFormat>ApkEmbedded</AndroidBuildFormat>
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
@@ -23,10 +23,10 @@
       <CrossfadeMusic>No</CrossfadeMusic>
       <CustomDataDir IsNull="True" />
       <CustomResolution>320,200</CustomResolution>
-      <DebugMode>True</DebugMode>
+      <DebugMode>False</DebugMode>
       <DefaultRoomMaskResolution>1</DefaultRoomMaskResolution>
       <Description />
-      <DeveloperName />
+      <DeveloperName xml:space="preserve">Borealis Games</DeveloperName>
       <DeveloperURL />
       <DialogOptionsBackwards>False</DialogOptionsBackwards>
       <DialogOptionsBullet>0</DialogOptionsBullet>
@@ -689,8 +689,20 @@
             <Number>8</Number>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Description xml:space="preserve">End Credits</Description>
+            <Description xml:space="preserve">Ending Cutscene</Description>
             <Number>9</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description xml:space="preserve">Luna To Solara Transition</Description>
+            <Number>302</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description xml:space="preserve">Solara to Luna Transition</Description>
+            <Number>10</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description xml:space="preserve">Game Ending</Description>
+            <Number>303</Number>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -774,7 +786,7 @@
           </GUIMain>
           <GUIMain>
             <NormalGUI>
-              <BackgroundColor>0</BackgroundColor>
+              <BackgroundColor>32799</BackgroundColor>
               <BackgroundImage>2169</BackgroundImage>
               <BorderColor>0</BorderColor>
               <Clickable>True</Clickable>
@@ -817,7 +829,7 @@
                 <Height>27</Height>
                 <ID>1</ID>
                 <Image>2116</Image>
-                <Left>39</Left>
+                <Left>68</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>2117</MouseoverImage>
                 <Name>btnInvSelect</Name>
@@ -833,37 +845,13 @@
                 <ZOrder>1</ZOrder>
               </GUIButton>
               <GUIButton>
-                <ClickAction>SetCursorMode</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>27</Height>
-                <ID>2</ID>
-                <Image>2104</Image>
-                <Left>4</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>2105</MouseoverImage>
-                <Name>btnInvLook</Name>
-                <NewModeNumber>1</NewModeNumber>
-                <OnClick />
-                <PushedImage>2106</PushedImage>
-                <Text xml:space="preserve">New Button</Text>
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>16</TextColor>
-                <Top>101</Top>
-                <Visible>True</Visible>
-                <Width>32</Width>
-                <ZOrder>2</ZOrder>
-              </GUIButton>
-              <GUIButton>
                 <ClickAction>RunScript</ClickAction>
                 <Clickable>True</Clickable>
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
                 <Height>19</Height>
-                <ID>3</ID>
+                <ID>2</ID>
                 <Image>2160</Image>
                 <Left>147</Left>
                 <Locked>False</Locked>
@@ -878,7 +866,7 @@
                 <Top>107</Top>
                 <Visible>True</Visible>
                 <Width>71</Width>
-                <ZOrder>3</ZOrder>
+                <ZOrder>2</ZOrder>
               </GUIButton>
               <GUIButton>
                 <ClickAction>RunScript</ClickAction>
@@ -887,7 +875,7 @@
                 <Enabled>True</Enabled>
                 <Font>0</Font>
                 <Height>27</Height>
-                <ID>4</ID>
+                <ID>3</ID>
                 <Image>2144</Image>
                 <Left>188</Left>
                 <Locked>False</Locked>
@@ -902,7 +890,7 @@
                 <Top>71</Top>
                 <Visible>True</Visible>
                 <Width>30</Width>
-                <ZOrder>4</ZOrder>
+                <ZOrder>3</ZOrder>
               </GUIButton>
               <GUIButton>
                 <ClickAction>RunScript</ClickAction>
@@ -911,7 +899,7 @@
                 <Enabled>True</Enabled>
                 <Font>0</Font>
                 <Height>27</Height>
-                <ID>5</ID>
+                <ID>4</ID>
                 <Image>2147</Image>
                 <Left>188</Left>
                 <Locked>False</Locked>
@@ -926,7 +914,7 @@
                 <Top>5</Top>
                 <Visible>True</Visible>
                 <Width>30</Width>
-                <ZOrder>5</ZOrder>
+                <ZOrder>4</ZOrder>
               </GUIButton>
             </Controls>
           </GUIMain>
@@ -1903,7 +1891,7 @@
           </GUIMain>
           <GUIMain>
             <TextWindowGUI>
-              <BackgroundColor>32943</BackgroundColor>
+              <BackgroundColor>65079</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
               <ID>7</ID>
               <Name>gTextBorder</Name>
@@ -1914,7 +1902,7 @@
               <GUITextWindowEdge>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
-                <Height>10</Height>
+                <Height>9</Height>
                 <ID>0</ID>
                 <Image>2150</Image>
                 <Left>0</Left>
@@ -1922,13 +1910,13 @@
                 <Name />
                 <Top>0</Top>
                 <Visible>True</Visible>
-                <Width>10</Width>
+                <Width>9</Width>
                 <ZOrder>0</ZOrder>
               </GUITextWindowEdge>
               <GUITextWindowEdge>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
-                <Height>10</Height>
+                <Height>9</Height>
                 <ID>1</ID>
                 <Image>2155</Image>
                 <Left>0</Left>
@@ -1936,13 +1924,13 @@
                 <Name />
                 <Top>90</Top>
                 <Visible>True</Visible>
-                <Width>10</Width>
+                <Width>9</Width>
                 <ZOrder>1</ZOrder>
               </GUITextWindowEdge>
               <GUITextWindowEdge>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
-                <Height>10</Height>
+                <Height>9</Height>
                 <ID>2</ID>
                 <Image>2152</Image>
                 <Left>90</Left>
@@ -1950,7 +1938,7 @@
                 <Name />
                 <Top>0</Top>
                 <Visible>True</Visible>
-                <Width>10</Width>
+                <Width>9</Width>
                 <ZOrder>2</ZOrder>
               </GUITextWindowEdge>
               <GUITextWindowEdge>
@@ -1970,35 +1958,35 @@
               <GUITextWindowEdge>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
-                <Height>10</Height>
+                <Height>9</Height>
                 <ID>4</ID>
-                <Image>2153</Image>
+                <Image>2154</Image>
                 <Left>0</Left>
                 <Locked>False</Locked>
                 <Name />
                 <Top>40</Top>
                 <Visible>True</Visible>
-                <Width>10</Width>
+                <Width>9</Width>
                 <ZOrder>4</ZOrder>
               </GUITextWindowEdge>
               <GUITextWindowEdge>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
-                <Height>10</Height>
+                <Height>9</Height>
                 <ID>5</ID>
-                <Image>2154</Image>
+                <Image>2153</Image>
                 <Left>90</Left>
                 <Locked>False</Locked>
                 <Name />
                 <Top>40</Top>
                 <Visible>True</Visible>
-                <Width>10</Width>
+                <Width>9</Width>
                 <ZOrder>5</ZOrder>
               </GUITextWindowEdge>
               <GUITextWindowEdge>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
-                <Height>10</Height>
+                <Height>9</Height>
                 <ID>6</ID>
                 <Image>2151</Image>
                 <Left>40</Left>
@@ -2006,21 +1994,21 @@
                 <Name />
                 <Top>0</Top>
                 <Visible>True</Visible>
-                <Width>10</Width>
+                <Width>9</Width>
                 <ZOrder>6</ZOrder>
               </GUITextWindowEdge>
               <GUITextWindowEdge>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
-                <Height>10</Height>
+                <Height>9</Height>
                 <ID>7</ID>
-                <Image>2156</Image>
+                <Image>34</Image>
                 <Left>40</Left>
                 <Locked>False</Locked>
                 <Name />
                 <Top>90</Top>
                 <Visible>True</Visible>
-                <Width>10</Width>
+                <Width>9</Width>
                 <ZOrder>7</ZOrder>
               </GUITextWindowEdge>
             </Controls>
@@ -2138,10 +2126,10 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>28</Height>
+                <Height>30</Height>
                 <ID>0</ID>
-                <Image>11</Image>
-                <Left>34</Left>
+                <Image>6</Image>
+                <Left>32</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>0</MouseoverImage>
                 <Name>bEggs</Name>
@@ -2153,7 +2141,7 @@
                 <TextColor>0</TextColor>
                 <Top>23</Top>
                 <Visible>True</Visible>
-                <Width>26</Width>
+                <Width>30</Width>
                 <ZOrder>0</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -2162,10 +2150,10 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>14</Height>
+                <Height>30</Height>
                 <ID>1</ID>
                 <Image>3</Image>
-                <Left>48</Left>
+                <Left>44</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>0</MouseoverImage>
                 <Name>bCheese</Name>
@@ -2175,9 +2163,9 @@
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>0</TextColor>
-                <Top>63</Top>
+                <Top>52</Top>
                 <Visible>True</Visible>
-                <Width>20</Width>
+                <Width>30</Width>
                 <ZOrder>1</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -2186,10 +2174,10 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>22</Height>
+                <Height>30</Height>
                 <ID>2</ID>
                 <Image>4</Image>
-                <Left>20</Left>
+                <Left>14</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>0</MouseoverImage>
                 <Name>bTomato</Name>
@@ -2199,9 +2187,9 @@
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>0</TextColor>
-                <Top>78</Top>
+                <Top>76</Top>
                 <Visible>True</Visible>
-                <Width>18</Width>
+                <Width>30</Width>
                 <ZOrder>2</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -2553,10 +2541,10 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>7</Height>
+                <Height>30</Height>
                 <ID>0</ID>
                 <Image>14</Image>
-                <Left>44</Left>
+                <Left>33</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>14</MouseoverImage>
                 <Name>bLunaEgg</Name>
@@ -2566,9 +2554,9 @@
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>0</TextColor>
-                <Top>41</Top>
+                <Top>30</Top>
                 <Visible>True</Visible>
-                <Width>6</Width>
+                <Width>30</Width>
                 <ZOrder>0</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -2577,10 +2565,10 @@
                 <ClipImage>False</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>14</Height>
+                <Height>30</Height>
                 <ID>1</ID>
                 <Image>3</Image>
-                <Left>24</Left>
+                <Left>33</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>3</MouseoverImage>
                 <Name>bLunaCheese</Name>
@@ -2590,9 +2578,9 @@
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>0</TextColor>
-                <Top>61</Top>
+                <Top>76</Top>
                 <Visible>True</Visible>
-                <Width>20</Width>
+                <Width>30</Width>
                 <ZOrder>1</ZOrder>
               </GUIButton>
               <GUIButton>
@@ -2621,6 +2609,130 @@
               </GUIButton>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <TextWindowGUI>
+              <BackgroundColor>27218</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>13</ID>
+              <Name>gLunaTextBorder</Name>
+              <Padding>3</Padding>
+              <TextColor>15</TextColor>
+            </TextWindowGUI>
+            <Controls>
+              <GUITextWindowEdge>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Height>9</Height>
+                <ID>0</ID>
+                <Image>32</Image>
+                <Left>0</Left>
+                <Locked>False</Locked>
+                <Name />
+                <Top>0</Top>
+                <Visible>True</Visible>
+                <Width>9</Width>
+                <ZOrder>0</ZOrder>
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Height>9</Height>
+                <ID>1</ID>
+                <Image>30</Image>
+                <Left>0</Left>
+                <Locked>False</Locked>
+                <Name />
+                <Top>90</Top>
+                <Visible>True</Visible>
+                <Width>9</Width>
+                <ZOrder>1</ZOrder>
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Height>9</Height>
+                <ID>2</ID>
+                <Image>29</Image>
+                <Left>90</Left>
+                <Locked>False</Locked>
+                <Name />
+                <Top>0</Top>
+                <Visible>True</Visible>
+                <Width>9</Width>
+                <ZOrder>2</ZOrder>
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Height>10</Height>
+                <ID>3</ID>
+                <Image>27</Image>
+                <Left>90</Left>
+                <Locked>False</Locked>
+                <Name />
+                <Top>90</Top>
+                <Visible>True</Visible>
+                <Width>10</Width>
+                <ZOrder>3</ZOrder>
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Height>9</Height>
+                <ID>4</ID>
+                <Image>31</Image>
+                <Left>0</Left>
+                <Locked>False</Locked>
+                <Name />
+                <Top>40</Top>
+                <Visible>True</Visible>
+                <Width>9</Width>
+                <ZOrder>4</ZOrder>
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Height>9</Height>
+                <ID>5</ID>
+                <Image>28</Image>
+                <Left>90</Left>
+                <Locked>False</Locked>
+                <Name />
+                <Top>40</Top>
+                <Visible>True</Visible>
+                <Width>9</Width>
+                <ZOrder>5</ZOrder>
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Height>9</Height>
+                <ID>6</ID>
+                <Image>26</Image>
+                <Left>40</Left>
+                <Locked>False</Locked>
+                <Name />
+                <Top>0</Top>
+                <Visible>True</Visible>
+                <Width>9</Width>
+                <ZOrder>6</ZOrder>
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Height>9</Height>
+                <ID>7</ID>
+                <Image>33</Image>
+                <Left>40</Left>
+                <Locked>False</Locked>
+                <Name />
+                <Top>90</Top>
+                <Visible>True</Visible>
+                <Width>9</Width>
+                <ZOrder>7</ZOrder>
+              </GUITextWindowEdge>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -2631,8 +2743,8 @@
           <InventoryItem>
             <CursorImage>1</CursorImage>
             <Description xml:space="preserve">Frying Pan</Description>
-            <HotspotX>38</HotspotX>
-            <HotspotY>10</HotspotY>
+            <HotspotX>14</HotspotX>
+            <HotspotY>11</HotspotY>
             <ID>1</ID>
             <Image>1</Image>
             <Name>iFryingPan</Name>
@@ -2647,12 +2759,12 @@
             </Interactions>
           </InventoryItem>
           <InventoryItem>
-            <CursorImage>2</CursorImage>
+            <CursorImage>6</CursorImage>
             <Description>Eggs</Description>
-            <HotspotX>6</HotspotX>
-            <HotspotY>7</HotspotY>
+            <HotspotX>14</HotspotX>
+            <HotspotY>16</HotspotY>
             <ID>2</ID>
-            <Image>11</Image>
+            <Image>6</Image>
             <Name>iMultiEggs</Name>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <Properties />
@@ -2667,8 +2779,8 @@
           <InventoryItem>
             <CursorImage>3</CursorImage>
             <Description xml:space="preserve">Cheese Block</Description>
-            <HotspotX>10</HotspotX>
-            <HotspotY>5</HotspotY>
+            <HotspotX>14</HotspotX>
+            <HotspotY>14</HotspotY>
             <ID>3</ID>
             <Image>3</Image>
             <Name>iCheeseBlock</Name>
@@ -2685,8 +2797,8 @@
           <InventoryItem>
             <CursorImage>4</CursorImage>
             <Description>Tomato</Description>
-            <HotspotX>8</HotspotX>
-            <HotspotY>13</HotspotY>
+            <HotspotX>14</HotspotX>
+            <HotspotY>16</HotspotY>
             <ID>4</ID>
             <Image>4</Image>
             <Name>iTomato</Name>
@@ -2719,10 +2831,10 @@
             </Interactions>
           </InventoryItem>
           <InventoryItem>
-            <CursorImage>9</CursorImage>
+            <CursorImage>8</CursorImage>
             <Description>Keys</Description>
-            <HotspotX>7</HotspotX>
-            <HotspotY>6</HotspotY>
+            <HotspotX>17</HotspotX>
+            <HotspotY>16</HotspotY>
             <ID>6</ID>
             <Image>8</Image>
             <Name>iKeys</Name>
@@ -2739,8 +2851,8 @@
           <InventoryItem>
             <CursorImage>14</CursorImage>
             <Description>Egg</Description>
-            <HotspotX>2</HotspotX>
-            <HotspotY>2</HotspotY>
+            <HotspotX>14</HotspotX>
+            <HotspotY>14</HotspotY>
             <ID>7</ID>
             <Image>14</Image>
             <Name>iSingleEgg</Name>
@@ -2757,10 +2869,10 @@
           <InventoryItem>
             <CursorImage>16</CursorImage>
             <Description>Keys</Description>
-            <HotspotX>8</HotspotX>
-            <HotspotY>6</HotspotY>
+            <HotspotX>16</HotspotX>
+            <HotspotY>16</HotspotY>
             <ID>8</ID>
-            <Image>17</Image>
+            <Image>16</Image>
             <Name>iLunaKeys</Name>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <Properties />
@@ -4254,13 +4366,13 @@
               <SpriteFolder Name="TextWindow">
                 <SubFolders />
                 <Sprites>
-                  <Sprite Slot="2150" Width="4" Height="4" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                  <Sprite Slot="2150" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/TextWindow/textbox_topleft_corner.png</FileName>
+                      <FileName>Art Assets/GUI Elements/Solara Text Box/Solara_Text_Boxes-6.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
-                      <ImportHeight>4</ImportHeight>
-                      <ImportWidth>4</ImportWidth>
+                      <ImportHeight>9</ImportHeight>
+                      <ImportWidth>9</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
@@ -4269,13 +4381,13 @@
                       <ImportAlphaChannel>True</ImportAlphaChannel>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="2151" Width="1" Height="4" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                  <Sprite Slot="2151" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/TextWindow/textbox_top_border.png</FileName>
+                      <FileName>Art Assets/GUI Elements/Solara Text Box/Solara_Text_Boxes-7.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
-                      <ImportHeight>4</ImportHeight>
-                      <ImportWidth>1</ImportWidth>
+                      <ImportHeight>9</ImportHeight>
+                      <ImportWidth>9</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
@@ -4284,13 +4396,13 @@
                       <ImportAlphaChannel>True</ImportAlphaChannel>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="2152" Width="4" Height="4" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                  <Sprite Slot="2152" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/TextWindow/textbox_topright_corner.png</FileName>
+                      <FileName>Art Assets/GUI Elements/Solara Text Box/Solara_Text_Boxes-3.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
-                      <ImportHeight>4</ImportHeight>
-                      <ImportWidth>4</ImportWidth>
+                      <ImportHeight>9</ImportHeight>
+                      <ImportWidth>9</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
@@ -4299,13 +4411,13 @@
                       <ImportAlphaChannel>True</ImportAlphaChannel>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="2153" Width="4" Height="1" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                  <Sprite Slot="2153" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/TextWindow/textbox_left_border.png</FileName>
+                      <FileName>Art Assets/GUI Elements/Solara Text Box/Solara_Text_Boxes-2.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
-                      <ImportHeight>1</ImportHeight>
-                      <ImportWidth>4</ImportWidth>
+                      <ImportHeight>9</ImportHeight>
+                      <ImportWidth>9</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
@@ -4314,13 +4426,13 @@
                       <ImportAlphaChannel>True</ImportAlphaChannel>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="2154" Width="4" Height="1" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                  <Sprite Slot="2154" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/TextWindow/textbox_right_border.png</FileName>
+                      <FileName>Art Assets/GUI Elements/Solara Text Box/Solara_Text_Boxes-5.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
-                      <ImportHeight>1</ImportHeight>
-                      <ImportWidth>4</ImportWidth>
+                      <ImportHeight>9</ImportHeight>
+                      <ImportWidth>9</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
@@ -4329,13 +4441,13 @@
                       <ImportAlphaChannel>True</ImportAlphaChannel>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="2155" Width="4" Height="4" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                  <Sprite Slot="2155" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/TextWindow/textbox_bottomleft_corner.png</FileName>
+                      <FileName>Art Assets/GUI Elements/Solara Text Box/Solara_Text_Boxes-4.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
-                      <ImportHeight>4</ImportHeight>
-                      <ImportWidth>4</ImportWidth>
+                      <ImportHeight>9</ImportHeight>
+                      <ImportWidth>9</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
@@ -4359,13 +4471,28 @@
                       <ImportAlphaChannel>True</ImportAlphaChannel>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="2157" Width="4" Height="4" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                  <Sprite Slot="2157" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
-                      <FileName>Sprites/Defaults/TextWindow/textbox_bottomright_corner.png</FileName>
+                      <FileName>Art Assets/GUI Elements/Solara Text Box/Solara_Text_Boxes-1.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
-                      <ImportHeight>4</ImportHeight>
-                      <ImportWidth>4</ImportWidth>
+                      <ImportHeight>9</ImportHeight>
+                      <ImportWidth>9</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="34" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Art Assets/GUI Elements/Solara Text Box/Solara_Text_Boxes-8.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>9</ImportHeight>
+                      <ImportWidth>9</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
@@ -5110,6 +5237,221 @@
               </Sprite>
             </Sprites>
           </SpriteFolder>
+          <SpriteFolder Name="gTextBorder2Import">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="20" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName />
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>0</ImportHeight>
+                  <ImportWidth>0</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>False</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="21" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName />
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>0</ImportHeight>
+                  <ImportWidth>0</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>False</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="22" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName />
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>0</ImportHeight>
+                  <ImportWidth>0</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>False</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="23" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName />
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>0</ImportHeight>
+                  <ImportWidth>0</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>False</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="24" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName />
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>0</ImportHeight>
+                  <ImportWidth>0</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>False</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="25" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName />
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>0</ImportHeight>
+                  <ImportWidth>0</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>False</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="26" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                <Source>
+                  <FileName>Art Assets/GUI Elements/Luna Text Box/Luna_Text_Boxes-7.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>9</ImportHeight>
+                  <ImportWidth>9</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>False</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="27" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Art Assets/GUI Elements/Luna Text Box/Luna_Text_Boxes-1.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>9</ImportHeight>
+                  <ImportWidth>9</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="28" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Art Assets/GUI Elements/Luna Text Box/Luna_Text_Boxes-2.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>9</ImportHeight>
+                  <ImportWidth>9</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="29" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Art Assets/GUI Elements/Luna Text Box/Luna_Text_Boxes-3.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>9</ImportHeight>
+                  <ImportWidth>9</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="30" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Art Assets/GUI Elements/Luna Text Box/Luna_Text_Boxes-4.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>9</ImportHeight>
+                  <ImportWidth>9</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="31" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Art Assets/GUI Elements/Luna Text Box/Luna_Text_Boxes-5.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>9</ImportHeight>
+                  <ImportWidth>9</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="32" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Art Assets/GUI Elements/Luna Text Box/Luna_Text_Boxes-6.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>9</ImportHeight>
+                  <ImportWidth>9</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="33" Width="9" Height="9" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Art Assets/GUI Elements/Luna Text Box/Luna_Text_Boxes-8.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>9</ImportHeight>
+                  <ImportWidth>9</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
         </SubFolders>
         <Sprites>
           <Sprite Slot="0" Width="10" Height="6" ColorDepth="32" Resolution="Real" AlphaChannel="False">
@@ -5127,13 +5469,13 @@
               <ImportAlphaChannel>False</ImportAlphaChannel>
             </Source>
           </Sprite>
-          <Sprite Slot="1" Width="55" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+          <Sprite Slot="1" Width="30" Height="30" ColorDepth="32" Resolution="Real" AlphaChannel="True">
             <Source>
-              <FileName>Art Assets/Items/Frying_Pan.png</FileName>
+              <FileName>Art Assets/Items/Inventory_Items_FryingPan.png</FileName>
               <OffsetX>0</OffsetX>
               <OffsetY>0</OffsetY>
-              <ImportHeight>25</ImportHeight>
-              <ImportWidth>55</ImportWidth>
+              <ImportHeight>30</ImportHeight>
+              <ImportWidth>30</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
@@ -5157,13 +5499,13 @@
               <ImportAlphaChannel>True</ImportAlphaChannel>
             </Source>
           </Sprite>
-          <Sprite Slot="3" Width="20" Height="14" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+          <Sprite Slot="3" Width="30" Height="30" ColorDepth="32" Resolution="Real" AlphaChannel="True">
             <Source>
-              <FileName>Art Assets/Items/Cheese_Large.bmp</FileName>
+              <FileName>Art Assets/Items/Inventory_Items_Cheese.png</FileName>
               <OffsetX>0</OffsetX>
               <OffsetY>0</OffsetY>
-              <ImportHeight>14</ImportHeight>
-              <ImportWidth>20</ImportWidth>
+              <ImportHeight>30</ImportHeight>
+              <ImportWidth>30</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
@@ -5172,13 +5514,13 @@
               <ImportAlphaChannel>True</ImportAlphaChannel>
             </Source>
           </Sprite>
-          <Sprite Slot="4" Width="18" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+          <Sprite Slot="4" Width="30" Height="30" ColorDepth="32" Resolution="Real" AlphaChannel="True">
             <Source>
-              <FileName>Art Assets/Items/Tomato_Large.bmp</FileName>
+              <FileName>Art Assets/Items/Inventory_Items_Tomato.png</FileName>
               <OffsetX>0</OffsetX>
               <OffsetY>0</OffsetY>
-              <ImportHeight>22</ImportHeight>
-              <ImportWidth>18</ImportWidth>
+              <ImportHeight>30</ImportHeight>
+              <ImportWidth>30</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
@@ -5202,13 +5544,13 @@
               <ImportAlphaChannel>True</ImportAlphaChannel>
             </Source>
           </Sprite>
-          <Sprite Slot="6" Width="13" Height="14" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+          <Sprite Slot="6" Width="30" Height="30" ColorDepth="32" Resolution="Real" AlphaChannel="True">
             <Source>
-              <FileName>Art Assets/Items/Eggs.png</FileName>
+              <FileName>Art Assets/Items/Inventory_Items_Multi_Eggs.png</FileName>
               <OffsetX>0</OffsetX>
               <OffsetY>0</OffsetY>
-              <ImportHeight>14</ImportHeight>
-              <ImportWidth>13</ImportWidth>
+              <ImportHeight>30</ImportHeight>
+              <ImportWidth>30</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
@@ -5232,13 +5574,13 @@
               <ImportAlphaChannel>True</ImportAlphaChannel>
             </Source>
           </Sprite>
-          <Sprite Slot="8" Width="60" Height="51" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+          <Sprite Slot="8" Width="30" Height="30" ColorDepth="32" Resolution="Real" AlphaChannel="True">
             <Source>
-              <FileName>Art Assets/Items/Keys_Solara.png</FileName>
+              <FileName>Art Assets/Items/Inventory_Items_Keys_Solara.png</FileName>
               <OffsetX>0</OffsetX>
               <OffsetY>0</OffsetY>
-              <ImportHeight>51</ImportHeight>
-              <ImportWidth>60</ImportWidth>
+              <ImportHeight>30</ImportHeight>
+              <ImportWidth>30</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
@@ -5322,13 +5664,13 @@
               <ImportAlphaChannel>True</ImportAlphaChannel>
             </Source>
           </Sprite>
-          <Sprite Slot="14" Width="6" Height="7" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+          <Sprite Slot="14" Width="30" Height="30" ColorDepth="32" Resolution="Real" AlphaChannel="True">
             <Source>
-              <FileName>Art Assets/Items/Single_Egg.png</FileName>
+              <FileName>Art Assets/Items/Inventory_Items_Single_Egg.png</FileName>
               <OffsetX>0</OffsetX>
               <OffsetY>0</OffsetY>
-              <ImportHeight>7</ImportHeight>
-              <ImportWidth>6</ImportWidth>
+              <ImportHeight>30</ImportHeight>
+              <ImportWidth>30</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
@@ -5352,13 +5694,13 @@
               <ImportAlphaChannel>True</ImportAlphaChannel>
             </Source>
           </Sprite>
-          <Sprite Slot="16" Width="15" Height="13" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+          <Sprite Slot="16" Width="30" Height="30" ColorDepth="32" Resolution="Real" AlphaChannel="True">
             <Source>
-              <FileName>Art Assets/Items/Keys_Luna.bmp</FileName>
+              <FileName>Art Assets/Items/Inventory_Items_Keys_Luna.png</FileName>
               <OffsetX>0</OffsetX>
               <OffsetY>0</OffsetY>
-              <ImportHeight>13</ImportHeight>
-              <ImportWidth>15</ImportWidth>
+              <ImportHeight>30</ImportHeight>
+              <ImportWidth>30</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
@@ -5367,13 +5709,13 @@
               <ImportAlphaChannel>True</ImportAlphaChannel>
             </Source>
           </Sprite>
-          <Sprite Slot="17" Width="60" Height="51" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+          <Sprite Slot="17" Width="15" Height="13" ColorDepth="32" Resolution="Real" AlphaChannel="True">
             <Source>
-              <FileName>Art Assets/Items/Keys_Luna.png</FileName>
+              <FileName>Art Assets/Items/V1/Keys_Luna.bmp</FileName>
               <OffsetX>0</OffsetX>
               <OffsetY>0</OffsetY>
-              <ImportHeight>51</ImportHeight>
-              <ImportWidth>60</ImportWidth>
+              <ImportHeight>13</ImportHeight>
+              <ImportWidth>15</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>
@@ -5389,6 +5731,36 @@
               <OffsetY>0</OffsetY>
               <ImportHeight>71</ImportHeight>
               <ImportWidth>40</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="19" Width="55" Height="25" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Items/V1/Frying_Pan.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>25</ImportHeight>
+              <ImportWidth>55</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>False</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="35" Width="320" Height="200" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>Art Assets/Room Backgrounds/Debug Background.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>200</ImportHeight>
+              <ImportWidth>320</ImportWidth>
               <ImportAsTile>False</ImportAsTile>
               <Frame>0</Frame>
               <RemapToGamePalette>False</RemapToGamePalette>

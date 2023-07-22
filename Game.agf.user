@@ -3,7 +3,7 @@
 <AGSEditorUserData Version="3.0.2.1" VersionIndex="4" EditorVersion="3.6.0.50">
   <Component Name="SourceControl" />
   <WorkspaceState>
-    <LastBuildConfiguration>Debug</LastBuildConfiguration>
+    <LastBuildConfiguration>Release</LastBuildConfiguration>
     <LastBuildGameFileName>DataFile=Twinned_Mirrors,Windows=Twinned_Mirrors,_Debug=Twinned_Mirrors,</LastBuildGameFileName>
     <RequiresRebuild>False</RequiresRebuild>
   </WorkspaceState>
