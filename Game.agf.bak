@@ -680,6 +680,18 @@
             <Description xml:space="preserve">Luna Living Room</Description>
             <Number>6</Number>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Description xml:space="preserve">Solara Lab</Description>
+            <Number>7</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description xml:space="preserve">Luna Lab</Description>
+            <Number>8</Number>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Description xml:space="preserve">End Credits</Description>
+            <Number>9</Number>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
