@@ -25,7 +25,7 @@
       <CustomResolution>320,200</CustomResolution>
       <DebugMode>False</DebugMode>
       <DefaultRoomMaskResolution>1</DefaultRoomMaskResolution>
-      <Description xml:space="preserve">A narrative based adventure about two women from different dimensions whos’ paths one day cross.</Description>
+      <Description xml:space="preserve">A narrative based adventure about two women from different dimensions whos’ paths one day cross. Created for Fediverse Summer Game Jam.</Description>
       <DeveloperName xml:space="preserve">Borealis Games</DeveloperName>
       <DeveloperURL>https://spots1000.itch.io/</DeveloperURL>
       <DialogOptionsBackwards>False</DialogOptionsBackwards>
@@ -40,7 +40,7 @@
       <EnforceObjectBasedScript>True</EnforceObjectBasedScript>
       <GUIAlphaStyle>MultiplyTranslucenceSrcBlend</GUIAlphaStyle>
       <GUIDAsString>{8dbad205-a22e-4c75-84d6-eadc4aeb2a8f}</GUIDAsString>
-      <GameFileName>Twinned_Jam_Game</GameFileName>
+      <GameFileName>Twinned</GameFileName>
       <GameName>Twinned</GameName>
       <GameTextEncoding>utf-8</GameTextEncoding>
       <Genre xml:space="preserve">Sci-Fi Point &amp; Click</Genre>
