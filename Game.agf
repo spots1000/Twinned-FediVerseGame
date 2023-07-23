@@ -8,11 +8,11 @@
       <AndroidAppVersionCode>2</AndroidAppVersionCode>
       <AndroidAppVersionName>2.0.0.0</AndroidAppVersionName>
       <AndroidApplicationId>com.borealis.twinned</AndroidApplicationId>
-      <AndroidBuildFormat>ApkEmbedded</AndroidBuildFormat>
+      <AndroidBuildFormat>AabEmbedded</AndroidBuildFormat>
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>0</AudioIndexer>
+      <AudioIndexer>7</AudioIndexer>
       <AutoMoveInWalkMode>False</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
@@ -25,9 +25,9 @@
       <CustomResolution>320,200</CustomResolution>
       <DebugMode>False</DebugMode>
       <DefaultRoomMaskResolution>1</DefaultRoomMaskResolution>
-      <Description />
+      <Description xml:space="preserve">A narrative based adventure about two women from different dimensions whos’ paths one day cross.</Description>
       <DeveloperName xml:space="preserve">Borealis Games</DeveloperName>
-      <DeveloperURL />
+      <DeveloperURL>https://spots1000.itch.io/</DeveloperURL>
       <DialogOptionsBackwards>False</DialogOptionsBackwards>
       <DialogOptionsBullet>0</DialogOptionsBullet>
       <DialogOptionsGUI>0</DialogOptionsGUI>
@@ -40,10 +40,10 @@
       <EnforceObjectBasedScript>True</EnforceObjectBasedScript>
       <GUIAlphaStyle>MultiplyTranslucenceSrcBlend</GUIAlphaStyle>
       <GUIDAsString>{8dbad205-a22e-4c75-84d6-eadc4aeb2a8f}</GUIDAsString>
-      <GameFileName>Twinned_Mirrors</GameFileName>
+      <GameFileName>Twinned_Jam_Game</GameFileName>
       <GameName>Twinned</GameName>
       <GameTextEncoding>utf-8</GameTextEncoding>
-      <Genre>Adventure</Genre>
+      <Genre xml:space="preserve">Sci-Fi Point &amp; Click</Genre>
       <GlobalSpeechAnimationDelay>5</GlobalSpeechAnimationDelay>
       <HandleInvClicksInScript>False</HandleInvClicksInScript>
       <HasMODMusic>False</HasMODMusic>
@@ -60,7 +60,7 @@
       <OptimizeSpriteStorage>True</OptimizeSpriteStorage>
       <PixelPerfect>True</PixelPerfect>
       <PlaySoundOnScore>0</PlaySoundOnScore>
-      <ReleaseDate>2022-03-01</ReleaseDate>
+      <ReleaseDate>2023-07-22</ReleaseDate>
       <RenderAtScreenResolution>UserDefined</RenderAtScreenResolution>
       <RoomTransition>FadeOutAndIn</RoomTransition>
       <RunGameLoopsWhileDialogOptionsDisplayed>False</RunGameLoopsWhileDialogOptionsDisplayed>
@@ -86,7 +86,7 @@
       <UseLowResCoordinatesInScript>False</UseLowResCoordinatesInScript>
       <UseOldCustomDialogOptionsAPI>False</UseOldCustomDialogOptionsAPI>
       <UseOldKeyboardHandling>False</UseOldKeyboardHandling>
-      <Version>1.0.0.0</Version>
+      <Version>2.0.0.0</Version>
       <WalkInLookMode>False</WalkInLookMode>
       <WhenInterfaceDisabled>GreyOut</WhenInterfaceDisabled>
     </Settings>
@@ -2731,6 +2731,80 @@
                 <Width>9</Width>
                 <ZOrder>7</ZOrder>
               </GUITextWindowEdge>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>35</BackgroundImage>
+              <BorderColor>0</BorderColor>
+              <Clickable>False</Clickable>
+              <Height>200</Height>
+              <ID>14</ID>
+              <Left>0</Left>
+              <Name>gEndScreenGUI</Name>
+              <OnClick />
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <Top>0</Top>
+              <Transparency>0</Transparency>
+              <Visible>False</Visible>
+              <Width>320</Width>
+              <ZOrder>0</ZOrder>
+            </NormalGUI>
+            <Controls>
+              <GUITextBox>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>24</Height>
+                <ID>0</ID>
+                <Left>319</Left>
+                <Locked>False</Locked>
+                <Name>txtEndCredits</Name>
+                <OnActivate />
+                <ShowBorder>True</ShowBorder>
+                <Text />
+                <TextColor>0</TextColor>
+                <Top>199</Top>
+                <Visible>False</Visible>
+                <Width>154</Width>
+                <ZOrder>0</ZOrder>
+              </GUITextBox>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>21</Height>
+                <ID>1</ID>
+                <Left>4</Left>
+                <Locked>False</Locked>
+                <Name>lCreditText</Name>
+                <Text xml:space="preserve">Borealis Games</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>187</Top>
+                <Visible>True</Visible>
+                <Width>197</Width>
+                <ZOrder>1</ZOrder>
+              </GUILabel>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>3</Font>
+                <Height>21</Height>
+                <ID>2</ID>
+                <Left>216</Left>
+                <Locked>False</Locked>
+                <Name>Label3</Name>
+                <Text xml:space="preserve">Created for Summer Fediverse Jam</Text>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>0</TextColor>
+                <Top>180</Top>
+                <Visible>True</Visible>
+                <Width>102</Width>
+                <ZOrder>2</ZOrder>
+              </GUILabel>
             </Controls>
           </GUIMain>
         </GUIs>
@@ -5899,7 +5973,86 @@ See KeyboardMovement.txt for details.
           </AudioClipFolder>
           <AudioClipFolder Name="Sounds">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>0</ID>
+                <Index>1</Index>
+                <ScriptName>sFrontDoorUnlock</ScriptName>
+                <SourceFileName xml:space="preserve">Audio Assets/669109__geoff-bremner-audio__keys-catch-2.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2023-07-22 23:50:58Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>MP3</FileType>
+                <ID>1</ID>
+                <Index>2</Index>
+                <ScriptName>sPortalActivate</ScriptName>
+                <SourceFileName xml:space="preserve">Audio Assets/128196__kafokafo__computer.mp3</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2023-07-22 23:50:49Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>2</ID>
+                <Index>4</Index>
+                <ScriptName>sTextRecived</ScriptName>
+                <SourceFileName xml:space="preserve">Audio Assets/448745__matrixxx__futuristic-city-terminal.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2023-07-22 23:50:16Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>3</ID>
+                <Index>5</Index>
+                <ScriptName>sItemRecieved</ScriptName>
+                <SourceFileName xml:space="preserve">Audio Assets/651515__1bob__grab-item.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2023-07-22 23:50:01Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>4</ID>
+                <Index>6</Index>
+                <ScriptName>sBasicDoorTransition</ScriptName>
+                <SourceFileName xml:space="preserve">Audio Assets/Basic Door - Shortened.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2023-07-23 00:03:22Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <BundlingType>InGameEXE</BundlingType>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <DefaultVolume>-1</DefaultVolume>
+                <FileType>WAV</FileType>
+                <ID>5</ID>
+                <Index>7</Index>
+                <ScriptName>sMenuSelection</ScriptName>
+                <SourceFileName xml:space="preserve">Audio Assets/Selection.wav</SourceFileName>
+                <Type>3</Type>
+                <FileLastModifiedDate>2023-07-23 00:07:51Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
               <DefaultBundlingType>InGameEXE</DefaultBundlingType>
               <DefaultPriority>Inherit</DefaultPriority>
